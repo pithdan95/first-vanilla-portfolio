@@ -9,6 +9,8 @@
 
 body {
   font-family: "Poppins", sans-serif;
+  color: brown;
+  background-color: antiquewhite;
 }
 
 html {
@@ -20,6 +22,10 @@ p {
   color: rgb(85, 85, 85);
 }
 
+.logo {
+  color: black;
+}
+
 /* TRANSITION */
 
 a,
@@ -28,8 +34,12 @@ a,
 }
 
 hr {
+  height: 1px;
+  background-color: brown;
+  border:none;
   width: 90%;
   margin:auto;
+  
 }
 
 /* DESKTOP NAV */
@@ -42,8 +52,7 @@ nav,
 nav {
   justify-content: space-around;
   align-items: center;
-  padding:2% 0;
-  margin: 0 5%;
+  padding:2% 5%;
 }
 
 .nav-links {
@@ -52,8 +61,15 @@ nav {
   font-size: 1.5rem;
 }
 
+nav, .footer-nav {
+  justify-content: space-evenly;
+  border: none;
+}
+
 nav, #hamburger-nav {
   justify-content: space-between;
+  background-color: moccasin;
+  border-bottom: 2px solid rgb(85, 85, 85);
 }
 
 a {
@@ -81,6 +97,7 @@ a:hover {
 
 #hamburger-nav {
   display: none;
+
 }
 
 .hamburger-menu {
@@ -185,7 +202,7 @@ section {
   height: 400px;
   width: 400px;
   border-radius: 50%;
-  margin: auto 0;
+  margin: auto;
 }
 
 .section__text {
@@ -262,7 +279,7 @@ section {
 }
 
 .btn-color-2 {
-  background: none;
+  background: moccasin;
 }
 
 .btn-color-2:hover {
@@ -308,7 +325,7 @@ section {
 .details-container {
   padding: 1.5rem;
   flex: 1;
-  background: white;
+  background: moccasin;
   border-radius: 2rem;
   border: rgb(53, 53, 53) 0.1rem solid;
   border-color: rgb(163, 163, 163);
@@ -373,7 +390,7 @@ article .icon {
 
 .color-container {
   border-color: rgb(163, 163, 163);
-  background: rgb(250, 250, 250);
+  background: moccasin;
 }
 
 .project-img {
@@ -388,7 +405,8 @@ article .icon {
 }
 
 .project-btn {
-  color: black;
+  color: white;
+  background: brown;
   border-color: rgb(163, 163, 163);
 }
 
@@ -438,9 +456,15 @@ article .icon {
 
 footer {
   height: 26vh;
-  margin: 0 1rem;
+  border-top: 2px solid rgb(85, 85, 85);
+  background-color: moccasin;
 }
 
 footer p {
   text-align: center;
+}
+
+#loom-companion-mv3 {
+  display: none;
+  
 }
