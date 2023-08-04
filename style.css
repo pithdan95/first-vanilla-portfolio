@@ -42,13 +42,18 @@ nav,
 nav {
   justify-content: space-around;
   align-items: center;
-  height: 17vh;
+  padding:2% 0;
+  margin: 0 5%;
 }
 
 .nav-links {
   gap: 2rem;
   list-style: none;
   font-size: 1.5rem;
+}
+
+nav, #hamburger-nav {
+  justify-content: space-between;
 }
 
 a {
@@ -118,6 +123,7 @@ a:hover {
   color: black;
   text-decoration: none;
   transition: all 0.3 ease-in-out;
+  border: 1px solid black;
 }
 
 .menu-links li {
@@ -126,6 +132,7 @@ a:hover {
 
 .menu-links.open {
   max-height: 300px;
+  border: 1px solid black;
 }
 
 .hamburger-icon.open span:first-child {
@@ -155,9 +162,8 @@ a:hover {
 /* SECTIONS */
 
 section {
-  padding-top: 4vh;
-  height: 96vh;
-  margin: 0 10rem;
+  padding: 2% 0;
+  margin: 0 10%;
   box-sizing: border-box;
   min-height: fit-content;
 }
@@ -170,15 +176,15 @@ section {
 
 #profile {
   display: flex;
-  justify-content: center;
-  gap: 5rem;
-  height: 80vh;
+  justify-content: space-between;
+  padding:9%;
 }
 
 .section__pic-container {
   display: flex;
   height: 400px;
   width: 400px;
+  border-radius: 50%;
   margin: auto 0;
 }
 
@@ -315,8 +321,8 @@ section {
 }
 
 .section__pic-container {
-  height: 400px;
-  width: 400px;
+  height: 450px;
+  width: 450px;
   margin: auto 0;
 }
 
@@ -392,11 +398,13 @@ article .icon {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  height: 70vh;
+  padding:5%;
+  
 }
 
 .contact-info-upper-container {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   border-radius: 2rem;
   border: rgb(53, 53, 53) 0.1rem solid;
